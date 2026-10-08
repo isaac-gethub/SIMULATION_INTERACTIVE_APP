@@ -1,0 +1,1 @@
+Component 5 single sign-in correction: no secondary password form, uses existing Supabase Academy session. Includes a visible authentication watchdog and script error reporting. No bypass of authentication or RLS. Upload all files into GitHub root; browser test required.

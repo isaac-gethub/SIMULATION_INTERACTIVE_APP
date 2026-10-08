@@ -1,4 +1,9 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TIB Academy | Secure Corvane Junior–Lead Training</title><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><style>body{margin:0;background:#f4f6fa;color:#182b43;font:15px/1.5 system-ui,Arial}header{background:#152e50;color:#fff;padding:20px 4vw}main{max-width:1150px;margin:18px auto;padding:0 14px}.panel{background:white;border:1px solid #dbe2ea;border-radius:12px;padding:20px;margin-bottom:14px}button,select,input,textarea{font:inherit;padding:9px;border:1px solid #a8b7c8;border-radius:7px}button{cursor:pointer;background:#fff;color:#16375b}button.primary{background:#77294b;color:white;border-color:#77294b}button:disabled{opacity:.5;cursor:not-allowed}input,textarea,select{max-width:100%}textarea{width:100%;min-height:95px;box-sizing:border-box}label{display:block;margin:12px 0}label input[type=checkbox]{margin-right:8px}.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}.grid{display:grid;grid-template-columns:230px 1fr;gap:14px}.stage{width:100%;text-align:left;margin:3px 0}.stage.active{background:#17385f;color:white}.muted{color:#63728a}.notice{padding:12px;background:#eef2f8;border-radius:8px;margin:12px 0}.bad{background:#fff0f1;color:#8d253c}.good{background:#e8f6ee;color:#21643c}.tag{font-weight:bold;color:#762c4d}a{color:#17508a}pre{white-space:pre-wrap;overflow-wrap:anywhere}@media(max-width:700px){.grid{grid-template-columns:1fr}}</style></head><body><header><small>TIB SYSTEMS LLC · TIB ACADEMY</small><h1>Corvane Energy — Connected Junior and Controls Lead</h1><div>Authenticated training · Shared submissions · Lead review · Nine stage gates</div></header><main><section class="panel"><div id="authState">Checking Academy sign-in…</div><div id="loginPanel" hidden style="margin-top:12px"><label>Academy email <input id="secureEmail" type="email" autocomplete="username"></label><label>Academy password <input id="securePassword" type="password" autocomplete="current-password"></label><button id="secureSignIn" class="primary" onclick="inlineSignIn()">Sign In</button></div><div class="row"><label>Project <select id="project" onchange="chooseProject()"></select></label><label>Stage <select id="stageSelect" onchange="selectStage(Number(this.value))"></select></label><button onclick="reload()">Refresh records</button><a href="workpaper-library.html">Blank W01–W14 workpapers</a><a href="index.html">Academy home</a></div><div id="message" class="notice" role="status">Sign in through the Academy before working on an assignment.</div></section><div class="grid"><aside class="panel"><h3>Nine project stages</h3><div id="stageNav"></div></aside><section class="panel"><h2 id="stageTitle"></h2><div id="stageMeta"></div><div id="stageContent"></div></section></div><section class="panel"><h3>Project audit history</h3><pre id="audit">No history loaded</pre></section></main><script>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TIB Academy | Secure Corvane Junior–Lead Training</title><script>
+window.__tibAuthStarted=false;
+window.__tibAuthComplete=false;
+window.addEventListener('error',function(e){const a=document.getElementById('authState');if(a)a.textContent='Application error: '+(e.message||'script failed to load');const m=document.getElementById('message');if(m)m.textContent='Return to Academy home, sign in there, then reopen training. If this persists, send the displayed error.';});
+window.addEventListener('DOMContentLoaded',function(){setTimeout(function(){if(!window.__tibAuthComplete){const a=document.getElementById('authState');if(a&&a.textContent.includes('Checking'))a.textContent='Authentication could not complete';const m=document.getElementById('message');if(m)m.textContent='The Academy session was not verified. Return to Academy home and sign in; do not enter a second password here.';}},9000)});
+</script><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><style>body{margin:0;background:#f4f6fa;color:#182b43;font:15px/1.5 system-ui,Arial}header{background:#152e50;color:#fff;padding:20px 4vw}main{max-width:1150px;margin:18px auto;padding:0 14px}.panel{background:white;border:1px solid #dbe2ea;border-radius:12px;padding:20px;margin-bottom:14px}button,select,input,textarea{font:inherit;padding:9px;border:1px solid #a8b7c8;border-radius:7px}button{cursor:pointer;background:#fff;color:#16375b}button.primary{background:#77294b;color:white;border-color:#77294b}button:disabled{opacity:.5;cursor:not-allowed}input,textarea,select{max-width:100%}textarea{width:100%;min-height:95px;box-sizing:border-box}label{display:block;margin:12px 0}label input[type=checkbox]{margin-right:8px}.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}.grid{display:grid;grid-template-columns:230px 1fr;gap:14px}.stage{width:100%;text-align:left;margin:3px 0}.stage.active{background:#17385f;color:white}.muted{color:#63728a}.notice{padding:12px;background:#eef2f8;border-radius:8px;margin:12px 0}.bad{background:#fff0f1;color:#8d253c}.good{background:#e8f6ee;color:#21643c}.tag{font-weight:bold;color:#762c4d}a{color:#17508a}pre{white-space:pre-wrap;overflow-wrap:anywhere}@media(max-width:700px){.grid{grid-template-columns:1fr}}</style></head><body><header><small>TIB SYSTEMS LLC · TIB ACADEMY</small><h1>Corvane Energy — Connected Junior and Controls Lead</h1><div>Authenticated training · Shared submissions · Lead review · Nine stage gates</div></header><main><section class="panel"><div id="authState">Checking Academy session…</div><div class="row"><label>Project <select id="project" onchange="chooseProject()"></select></label><label>Stage <select id="stageSelect" onchange="selectStage(Number(this.value))"></select></label><button onclick="reload()">Refresh records</button><a href="workpaper-library.html">Blank W01–W14 workpapers</a><a href="index.html">Academy home</a></div><div id="message" class="notice" role="status">Sign in once at Academy home before working on an assignment.</div></section><div class="grid"><aside class="panel"><h3>Nine project stages</h3><div id="stageNav"></div></aside><section class="panel"><h2 id="stageTitle"></h2><div id="stageMeta"></div><div id="stageContent"></div></section></div><section class="panel"><h3>Project audit history</h3><pre id="audit">No history loaded</pre></section></main><script>
 const URL='https://blfgwysgekfqhcafofhe.supabase.co',KEY='sb_publishable_ThLetpd4hj49fjce-kXoFA_v4ghwIqV';
 const client=window.supabase?.createClient(URL,KEY);
 const wait=(promise,ms=12000)=>Promise.race([promise,new Promise((_,reject)=>setTimeout(()=>reject(new Error('Authentication request timed out')),ms))]);
@@ -10,31 +15,21 @@ function msg(t,bad=false){$('message').className='notice '+(bad?'bad':'');$('mes
 function activeRole(){return members.find(m=>m.project_id===project)?.role||''}
 function row(){return rows[stage]||{revision:0,status:'draft',junior_payload:{},lead_payload:{}}}
 function showLogin(reason='Sign in to the Academy to continue.'){
- $('authState').textContent='Academy sign-in required';
- $('loginPanel').hidden=false;
+ $('authState').textContent='Academy sign-in required';window.__tibAuthComplete=true;
+ 
  msg(reason,true);
 }
-async function inlineSignIn(){
- const email=$('secureEmail').value.trim(),password=$('securePassword').value;
- if(!email||!password){msg('Enter email and password.',true);return}
- const btn=$('secureSignIn');btn.disabled=true;msg('Signing in…');
- try{
-  const {data,error}=await wait(client.auth.signInWithPassword({email,password}));
-  if(error)throw error;
-  $('securePassword').value='';$('loginPanel').hidden=true;
-  await loadMembership(data.user);
- }catch(e){showLogin('Sign-in failed: '+e.message)}finally{btn.disabled=false}
-}
 async function init(){
- if(!client){showLogin('Supabase library did not load. Refresh the page.');return}
+ window.__tibAuthStarted=true;
+ if(!client){showLogin('Supabase authentication library did not load.');window.__tibAuthComplete=true;return}
  try{
   // getSession reads the session established on Academy home; getUser can stall
   // on a refresh-token lock. Never leave the UI stuck on Checking sign-in.
   const {data,error}=await wait(client.auth.getSession());
   if(error)throw error;
-  if(!data.session?.user){showLogin();return}
-  await loadMembership(data.session.user);
- }catch(e){showLogin('Unable to verify Academy session: '+e.message+'. Sign in here to retry.')}
+  if(!data.session?.user){showLogin('No Academy session found. Sign in once on Academy home, then return here.');window.__tibAuthComplete=true;return}
+  await loadMembership(data.session.user);window.__tibAuthComplete=true;
+ }catch(e){window.__tibAuthComplete=true;showLogin('Unable to verify Academy session: '+e.message+'. Return to Academy home.')}
 }
 async function loadMembership(account){
  user=account;$('authState').textContent='Signed in: '+user.email;
@@ -47,7 +42,7 @@ async function loadMembership(account){
  $('project').innerHTML=(p.data||[]).map(x=>`<option value="${esc(x.id)}">${esc(x.name)} — ${esc(members.find(m=>m.project_id===x.id)?.role)}</option>`).join('');
  project=p.data?.[0]?.id||null;
  if(!project){msg('No accessible training project was found.',true);return}
- $('loginPanel').hidden=true;
+ 
  await reload();
 }
 
