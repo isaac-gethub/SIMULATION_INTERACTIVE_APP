@@ -1,0 +1,1 @@
+Component 5 authentication correction. Secure Training now reuses Academy Supabase session via getSession, provides a direct login fallback, and has timeouts/error messages. No Supabase schema change needed. Deploy via GitHub/Vercel. Requires live browser verification. Gate checklist count discrepancy remains to be addressed before acceptance.
