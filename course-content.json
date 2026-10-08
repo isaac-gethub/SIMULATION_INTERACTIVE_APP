@@ -1,0 +1,532 @@
+{
+  "course": {
+    "id": "pm-controls-lead",
+    "title": "LEARN TO LEAD - SAP CONTROLS TEAM ON A LIVE PROJECT",
+    "projectMap": [
+      "Environment",
+      "Information Flows",
+      "Business Processes",
+      "Risks",
+      "Controls",
+      "Owners",
+      "Evidence",
+      "Testing",
+      "Results",
+      "Take Command",
+      "Manage Team",
+      "Review Work",
+      "Technical Challenge",
+      "Manage Audit",
+      "Remediation",
+      "Executive Governance",
+      "30-Day Capstone"
+    ]
+  },
+  "activities": [
+    {
+      "id": "environment",
+      "projectStage": "Environment",
+      "title": "Landscape and System Inventory",
+      "narrationTitle": "Day One — I Start the Engagement",
+      "narration": "I begin by meeting with the executive sponsor to understand what management expects from the controls review, the concerns they want addressed, the people who will participate, and how unresolved matters should be escalated. I then meet with the Head of IT Applications to begin understanding the client's technology environment. I ask for the Landscape Diagram and System List, the Hosting and Data-Centre Details, and any other existing documents that explain the environment. I use this information to begin building the Landscape and System Inventory.",
+      "sourceDocuments": [
+        "Landscape Diagram and System List",
+        "Hosting and Data-Centre Details",
+        "Day One Interview Notes"
+      ],
+      "blankWorkbook": "blank_landscape_system_inventory.csv",
+      "completedWorkbook": "Landscape and System Inventory",
+      "reviewQuestions": [
+        "What did you identify correctly?",
+        "What did you miss?",
+        "Did you record anything without proof?",
+        "What should remain outstanding?",
+        "What would you ask next?",
+        "Who would you ask?"
+      ],
+      "nextActivity": "information-flows",
+      "connect": {
+        "nowKnow": "The systems and components that support the client's environment.",
+        "stillNeed": "How important business information enters, leaves and moves between systems.",
+        "buildNext": "Interface and Data Flow Inventory"
+      }
+    },
+    {
+      "id": "information-flows",
+      "projectStage": "Information Flows",
+      "title": "Interface and Data Flow Inventory",
+      "narrationTitle": "I Follow How Information Moves",
+      "status": "ready-for-content",
+      "nextActivity": "business-processes"
+    },
+    {
+      "id": "business-processes",
+      "projectStage": "Business Processes",
+      "title": "Module and Business Process Scope",
+      "status": "ready-for-content",
+      "nextActivity": "risks"
+    },
+    {
+      "id": "risks",
+      "projectStage": "Risks",
+      "title": "Risk Register",
+      "status": "ready-for-content",
+      "nextActivity": "controls",
+      "enhancementMaterials": [
+        {
+          "file": "b09-prioritization.xlsx",
+          "title": "Materiality & Prioritization Lab"
+        }
+      ]
+    },
+    {
+      "id": "controls",
+      "projectStage": "Controls",
+      "title": "Risk and Control Matrix",
+      "status": "ready-for-content",
+      "nextActivity": "owners",
+      "enhancementMaterials": [
+        {
+          "file": "b02-control-class.xlsx",
+          "title": "Control Classification Lab"
+        },
+        {
+          "file": "b03-de-oe.xlsx",
+          "title": "Design vs Operating Effectiveness Lab"
+        },
+        {
+          "file": "b05-automation.xlsx",
+          "title": "Control Automation / CCM Lab"
+        }
+      ]
+    },
+    {
+      "id": "owners",
+      "projectStage": "Owners",
+      "title": "Control and Evidence Owner Matrix",
+      "status": "ready-for-content",
+      "nextActivity": "evidence"
+    },
+    {
+      "id": "evidence",
+      "projectStage": "Evidence",
+      "title": "Evidence Request Register / Evidence Index",
+      "status": "ready-for-content",
+      "nextActivity": "testing",
+      "enhancementMaterials": [
+        {
+          "file": "b04-ipe.xlsx",
+          "title": "IPE / Report Reliability Lab"
+        }
+      ]
+    },
+    {
+      "id": "testing",
+      "projectStage": "Testing",
+      "title": "Test Plan / Test Workpapers / Sample Selection",
+      "status": "ready-for-content",
+      "nextActivity": "results"
+    },
+    {
+      "id": "results",
+      "projectStage": "Results",
+      "title": "Deficiency and Remediation Log / Coverage Dashboard",
+      "status": "ready-for-content",
+      "nextActivity": null,
+      "enhancementMaterials": [
+        {
+          "file": "b10-root-cause.xlsx",
+          "title": "Root-Cause & Remediation Lab"
+        }
+      ]
+    },
+    {
+      "id": "lead-01",
+      "projectStage": "LEAD IT · Take Command",
+      "title": "Module 1 — Taking Command of the Controls Project",
+      "narrationTitle": "First-Person Leadership Narration",
+      "narration": "It is Monday morning and I am now accountable for the controls project. My first mistake would be to start doing the team's work. Before I change anything, I need to understand what I have inherited.\n\nI begin with the sponsor. I confirm why the project exists, what management expects, what deadlines cannot move, what concerns already exist and which decisions are waiting for me. I do not accept a green status simply because someone tells me the project is green. I ask what evidence supports the status.\n\nNext I meet the team. I want to know who owns each workstream, what each person is working on, what is overdue, what is blocked and where the team believes the greatest risks are. I compare those answers with the project plan, the fourteen foundation artifacts, prior audit findings and the current evidence requests.\n\nBy the end of the first few days I should be able to separate four things: what is confirmed, what is incomplete, what is at risk and what requires a management decision. I am not trying to solve every problem myself. I am establishing control of the work.\n\nBy Friday I prepare my first management status. It tells the sponsor what I know, what I do not yet know, the immediate risks, the overdue items, the people responsible and the decisions I need. That is how I begin leading the controls project.",
+      "sourceDocuments": [
+        "Leadership Scenario Package",
+        "First 30-Day Controls Lead Takeover Plan",
+        "Relevant Foundation Course Artifacts"
+      ],
+      "blankWorkbook": "TIB_Controls_Lead_Manager_AddOn_Templates.xlsx",
+      "completedWorkbook": "First 30-Day Controls Lead Takeover Plan",
+      "reviewQuestions": [
+        "What must I know before changing the inherited project?",
+        "Which facts are confirmed and which are still assumptions?",
+        "What are the three most urgent risks?",
+        "What should I personally own and what should I delegate?",
+        "What must be in Friday's sponsor status?"
+      ],
+      "nextActivity": "lead-02",
+      "connect": {
+        "nowKnow": "I understand what I inherited and what management expects.",
+        "stillNeed": "I still need a delivery model that makes ownership and accountability explicit.",
+        "buildNext": "Build the team RACI and resource plan."
+      },
+      "leadershipAddon": true,
+      "scenario": "Monday, 8:30 AM. You have just been appointed Controls Lead. The project is already underway. Your sponsor wants a reliable status assessment by Friday. You inherit incomplete workbooks, unresolved audit requests, prior findings and a team whose responsibilities are unclear.",
+      "purpose": "Move from project participant to accountable Controls Lead. Establish control of scope, people, deadlines, inherited artifacts, audit commitments and immediate risks.",
+      "artifact": "First 30-Day Controls Lead Takeover Plan",
+      "templateSheet": "01_Takeover_Plan",
+      "observePrompts": [
+        "What decision is being made?",
+        "Who should perform the work?",
+        "What must the Lead personally review?",
+        "What evidence supports the status?",
+        "What would cause escalation?"
+      ],
+      "exercise": "Using only the scenario facts and provided source information, complete the First 30-Day Controls Lead Takeover Plan. Do not invent missing facts. Mark unresolved information clearly and identify the person or evidence needed to resolve it."
+    },
+    {
+      "id": "lead-02",
+      "projectStage": "LEAD IT · Manage Team",
+      "title": "Module 2 — Building and Managing the Controls Team",
+      "narrationTitle": "First-Person Leadership Narration",
+      "narration": "I already know how the controls artifacts are built. My job now is to make sure the right people build them at the right time and to the right standard.\n\nI start with the deliverables, not with people's job titles. For each artifact I identify who is responsible for preparing it, who is accountable for accepting it, who must be consulted and who needs to be informed. I then look at effort, dependencies and deadlines.\n\nI do not delegate vaguely. I define the expected output, the source information, the due date, the review criteria and the point at which the person must escalate a problem. If an analyst owns the Risk Register, that does not mean I have abandoned the Risk Register. It means the analyst prepares it and I remain accountable for its quality.\n\nI also protect specialist time. The SAP Security specialist should not be used for administrative work that an analyst can perform. I use specialists where technical judgment is needed and analysts where structured evidence gathering, documentation and testing can be performed under supervision.\n\nThe result is a delivery model in which everyone knows what they own, what good looks like, when I will review it and what happens when the work falls behind.",
+      "sourceDocuments": [
+        "Leadership Scenario Package",
+        "Team RACI and Resource Delivery Plan",
+        "Relevant Foundation Course Artifacts"
+      ],
+      "blankWorkbook": "TIB_Controls_Lead_Manager_AddOn_Templates.xlsx",
+      "completedWorkbook": "Team RACI and Resource Delivery Plan",
+      "reviewQuestions": [
+        "Is every deliverable assigned to one responsible owner?",
+        "Is accountability clear even where preparation is delegated?",
+        "Are specialist resources being used for specialist work?",
+        "What dependencies could delay delivery?",
+        "Where are the review and escalation gates?"
+      ],
+      "nextActivity": "lead-03",
+      "connect": {
+        "nowKnow": "I know who owns each deliverable and how the team will work.",
+        "stillNeed": "I still need a reliable method to judge the quality of work produced by others.",
+        "buildNext": "Learn the Controls Lead QA review method."
+      },
+      "leadershipAddon": true,
+      "scenario": "You have four analysts, one SAP Security/GRC specialist, functional SMEs and offshore support. The project cannot succeed if you personally prepare every artifact.",
+      "purpose": "Translate the 14 project artifacts into accountable team assignments, workload, dependencies, review gates and escalation paths.",
+      "artifact": "Team RACI and Resource Delivery Plan",
+      "templateSheet": "02_RACI_Resource",
+      "observePrompts": [
+        "What decision is being made?",
+        "Who should perform the work?",
+        "What must the Lead personally review?",
+        "What evidence supports the status?",
+        "What would cause escalation?"
+      ],
+      "exercise": "Using only the scenario facts and provided source information, complete the Team RACI and Resource Delivery Plan. Do not invent missing facts. Mark unresolved information clearly and identify the person or evidence needed to resolve it."
+    },
+    {
+      "id": "lead-03",
+      "projectStage": "LEAD IT · Review Work",
+      "title": "Module 3 — Reviewing and Approving Team Work",
+      "narrationTitle": "First-Person Leadership Narration",
+      "narration": "A document can look complete and still be wrong. As Controls Lead, I need a repeatable way to review other people's work.\n\nI begin with completeness. Are the required fields, owners, populations, periods and conclusions present? Then I test accuracy. Does the work agree with the source evidence?\n\nNext I ask whether important statements are supported. If the workpaper says a quarterly review occurred, I need evidence that the review occurred for the correct quarter and population. I then check traceability. Can I move from the scoped process to the risk, from the risk to the control, from the control to the owner and evidence, and from the evidence to the test and conclusion?\n\nI check whether the control really addresses the risk. I check whether the evidence is sufficient and reliable. I check whether the test procedure actually proves the control objective. Finally, I ask whether the conclusion is defensible.\n\nMy choices are not simply pass or fail. I can approve the work, return it for correction, request more evidence or escalate an issue. The goal is not to redo the analyst's work. The goal is to know when the work is good enough to stand behind.",
+      "sourceDocuments": [
+        "Leadership Scenario Package",
+        "Controls Lead QA Review Checklist and Review Notes",
+        "Relevant Foundation Course Artifacts"
+      ],
+      "blankWorkbook": "TIB_Controls_Lead_Manager_AddOn_Templates.xlsx",
+      "completedWorkbook": "Controls Lead QA Review Checklist and Review Notes",
+      "reviewQuestions": [
+        "Is the work complete?",
+        "Is it accurate and supported?",
+        "Can I trace risk to control to evidence to test to conclusion?",
+        "Would I defend this work to an auditor?",
+        "Approve, return, request evidence or escalate — and why?"
+      ],
+      "nextActivity": "lead-04",
+      "connect": {
+        "nowKnow": "I can review controls work without reperforming all of it.",
+        "stillNeed": "I still need enough SAP technical literacy to challenge specialists intelligently.",
+        "buildNext": "Build the SAP Technical Challenge Guide."
+      },
+      "leadershipAddon": true,
+      "scenario": "A junior analyst submits a Risk Register, test workpaper and evidence package that look complete. Several important defects have been deliberately embedded.",
+      "purpose": "Teach the Lead to detect weak work without personally reperforming every test or rebuilding every workbook.",
+      "artifact": "Controls Lead QA Review Checklist and Review Notes",
+      "templateSheet": "03_QA_Review",
+      "observePrompts": [
+        "What decision is being made?",
+        "Who should perform the work?",
+        "What must the Lead personally review?",
+        "What evidence supports the status?",
+        "What would cause escalation?"
+      ],
+      "exercise": "Using only the scenario facts and provided source information, complete the Controls Lead QA Review Checklist and Review Notes. Do not invent missing facts. Mark unresolved information clearly and identify the person or evidence needed to resolve it.",
+      "enhancementMaterials": [
+        {
+          "file": "b03-de-oe.xlsx",
+          "title": "Design vs Operating Effectiveness Lab"
+        },
+        {
+          "file": "b04-ipe.xlsx",
+          "title": "IPE Reliability Challenge"
+        }
+      ]
+    },
+    {
+      "id": "lead-04",
+      "projectStage": "LEAD IT · Technical Challenge",
+      "title": "Module 4 — SAP Technical Literacy for Controls Leaders",
+      "narrationTitle": "First-Person Leadership Narration",
+      "narration": "I do not need to become the SAP Security administrator, Basis engineer or functional configurator. I do need enough technical understanding to recognize when an answer is incomplete.\n\nFor the landscape, I need to know which systems support the in-scope processes and where responsibility changes between the company, SAP and other providers. For access, I need to understand the user lifecycle, roles, approvals, privileged access and how access is removed.\n\nFor GRC, I need to understand SoD analysis, rulesets, mitigating controls, emergency access and review of privileged activity. For Fiori, I need to understand that what a user sees in the launchpad and what the backend authorizes are related but not identical.\n\nFor changes, I ask how a change moves from development through testing and approval into production. For interfaces and jobs, I ask what happens when processing fails and how completeness is monitored. For reports used in controls, I ask how the population is proven complete and accurate. For RISE and cloud services, I ask which responsibilities remain with the customer.\n\nMy most useful technical phrase is often simple: show me. Show me the approval. Show me the role. Show me the log. Show me the reconciliation. Show me what happens when it fails. I use technical literacy to ask better questions, not to pretend I am the specialist.",
+      "sourceDocuments": [
+        "Leadership Scenario Package",
+        "SAP Controls Technical Challenge Guide",
+        "Relevant Foundation Course Artifacts"
+      ],
+      "blankWorkbook": "TIB_Controls_Lead_Manager_AddOn_Templates.xlsx",
+      "completedWorkbook": "SAP Controls Technical Challenge Guide",
+      "reviewQuestions": [
+        "What is the control objective behind the technical explanation?",
+        "What would I ask the SME to show me?",
+        "What evidence would support the answer?",
+        "What red flag would cause escalation?",
+        "Do I need a specialist before concluding?"
+      ],
+      "nextActivity": "lead-05",
+      "connect": {
+        "nowKnow": "I can ask stronger technical questions and recognize red flags.",
+        "stillNeed": "I still need to control the flow of requests, evidence and questions with auditors.",
+        "buildNext": "Build the Audit Request and Resolution Dashboard."
+      },
+      "leadershipAddon": true,
+      "scenario": "Specialists tell you that access, transports, interfaces, reports and RISE responsibilities are controlled. You must determine what to ask and what to see.",
+      "purpose": "Give a PM-transitioning Lead enough SAP technical literacy to challenge Security, GRC, Basis, functional, IAM, integration and cloud specialists.",
+      "artifact": "SAP Controls Technical Challenge Guide",
+      "templateSheet": "04_Technical_Challenge",
+      "observePrompts": [
+        "What decision is being made?",
+        "Who should perform the work?",
+        "What must the Lead personally review?",
+        "What evidence supports the status?",
+        "What would cause escalation?"
+      ],
+      "exercise": "Using only the scenario facts and provided source information, complete the SAP Controls Technical Challenge Guide. Do not invent missing facts. Mark unresolved information clearly and identify the person or evidence needed to resolve it.",
+      "enhancementMaterials": [
+        {
+          "file": "b01-tech-playbook.docx",
+          "title": "SAP Technical Challenge Playbook"
+        },
+        {
+          "file": "b01-tech-challenge.xlsx",
+          "title": "Technical Challenge Cards"
+        },
+        {
+          "file": "b05-automation.xlsx",
+          "title": "Automation / Continuous Monitoring Lab"
+        },
+        {
+          "file": "b06-modern-sap.xlsx",
+          "title": "Modern SAP Landscape Lab"
+        },
+        {
+          "file": "b07-frameworks.xlsx",
+          "title": "Framework Quick Reference"
+        }
+      ]
+    },
+    {
+      "id": "lead-05",
+      "projectStage": "LEAD IT · Manage Audit",
+      "title": "Module 5 — Managing Internal and External Audit",
+      "narrationTitle": "First-Person Leadership Narration",
+      "narration": "An audit request is not complete because someone attached a file. Before evidence leaves the controls team, I need to know that it answers the request and supports the control.\n\nI log each request, assign an internal owner, confirm the due date and identify what the auditor is actually trying to prove. When evidence arrives, the team performs quality review before submission. If the evidence is wrong, incomplete or for the wrong period, I return it internally rather than sending a weak package to the auditor.\n\nWhen the auditor asks a follow-up question, I separate a request for clarification from a genuine control exception. If management disagrees with an auditor conclusion, I bring the discussion back to the control objective, the evidence and the facts.\n\nI also manage the relationship. I do not hide problems, and I do not concede unsupported conclusions. I communicate early when deadlines are at risk. I keep an audit trail of what was requested, what was submitted, what was questioned and how the matter was resolved.\n\nMy role is to make the audit process controlled, factual and efficient.",
+      "sourceDocuments": [
+        "Leadership Scenario Package",
+        "Audit Request and Resolution Dashboard",
+        "Relevant Foundation Course Artifacts"
+      ],
+      "blankWorkbook": "TIB_Controls_Lead_Manager_AddOn_Templates.xlsx",
+      "completedWorkbook": "Audit Request and Resolution Dashboard",
+      "reviewQuestions": [
+        "Does the evidence actually answer the audit request?",
+        "Was it quality-reviewed before submission?",
+        "Is this a clarification or a genuine exception?",
+        "What is overdue and who owns it?",
+        "What should be escalated now?"
+      ],
+      "nextActivity": "lead-06",
+      "connect": {
+        "nowKnow": "I can manage audit requests and evidence quality.",
+        "stillNeed": "I still need to turn exceptions into risk decisions, remediation and closure.",
+        "buildNext": "Build the Deficiency and Remediation Register."
+      },
+      "leadershipAddon": true,
+      "scenario": "External Audit sends 45 requests. Ten items are late, one control owner disputes a finding, and an analyst has submitted evidence that does not support the control.",
+      "purpose": "Manage audit requests, evidence quality, questions, disagreements, deadlines, reliance and escalation without becoming a document-forwarding service.",
+      "artifact": "Audit Request and Resolution Dashboard",
+      "templateSheet": "05_Audit_Dashboard",
+      "observePrompts": [
+        "What decision is being made?",
+        "Who should perform the work?",
+        "What must the Lead personally review?",
+        "What evidence supports the status?",
+        "What would cause escalation?"
+      ],
+      "exercise": "Using only the scenario facts and provided source information, complete the Audit Request and Resolution Dashboard. Do not invent missing facts. Mark unresolved information clearly and identify the person or evidence needed to resolve it.",
+      "enhancementMaterials": [
+        {
+          "file": "b12-audit-tech.xlsx",
+          "title": "Audit & Technical Challenge Simulation"
+        }
+      ]
+    },
+    {
+      "id": "lead-06",
+      "projectStage": "LEAD IT · Remediation",
+      "title": "Module 6 — Deficiencies, Remediation and Risk Decisions",
+      "narrationTitle": "First-Person Leadership Narration",
+      "narration": "Finding an exception is only the beginning. I need to understand what failed, why it failed and what risk that failure creates.\n\nI first connect the issue back to the control objective and the underlying risk. I determine whether the exception is isolated or whether it indicates a broader problem. I look for root cause rather than accepting a superficial explanation.\n\nIf a compensating control exists, I ask whether it genuinely reduces the same risk and whether it operated effectively. I identify the remediation owner, the action required and a realistic target date. I also decide who needs to know now rather than waiting for the next status meeting.\n\nA remediation item is not closed because management says it is fixed. The change must be implemented and, where appropriate, retested. Closure evidence must support the conclusion.\n\nMy responsibility is to make sure deficiencies become managed decisions rather than entries that sit indefinitely in a spreadsheet.",
+      "sourceDocuments": [
+        "Leadership Scenario Package",
+        "Management Deficiency and Remediation Register",
+        "Relevant Foundation Course Artifacts"
+      ],
+      "blankWorkbook": "TIB_Controls_Lead_Manager_AddOn_Templates.xlsx",
+      "completedWorkbook": "Management Deficiency and Remediation Register",
+      "reviewQuestions": [
+        "What failed and which risk does it expose?",
+        "Is the issue isolated or systemic?",
+        "Is the proposed compensating control valid?",
+        "Is remediation specific, owned and dated?",
+        "What evidence will be required to close it?"
+      ],
+      "nextActivity": "lead-07",
+      "connect": {
+        "nowKnow": "I can evaluate deficiencies and govern remediation.",
+        "stillNeed": "I still need to translate detailed project information into executive decisions.",
+        "buildNext": "Build the Executive Controls Dashboard."
+      },
+      "leadershipAddon": true,
+      "scenario": "Testing identifies several exceptions. One appears isolated; another may affect multiple business units. Management wants to know what is serious and what must happen next.",
+      "purpose": "Move beyond logging exceptions to evaluating impact, root cause, compensating controls, remediation, escalation, retesting and closure.",
+      "artifact": "Management Deficiency and Remediation Register",
+      "templateSheet": "06_Deficiency_Remediation",
+      "observePrompts": [
+        "What decision is being made?",
+        "Who should perform the work?",
+        "What must the Lead personally review?",
+        "What evidence supports the status?",
+        "What would cause escalation?"
+      ],
+      "exercise": "Using only the scenario facts and provided source information, complete the Management Deficiency and Remediation Register. Do not invent missing facts. Mark unresolved information clearly and identify the person or evidence needed to resolve it.",
+      "enhancementMaterials": [
+        {
+          "file": "b09-prioritization.xlsx",
+          "title": "Materiality & Prioritization Lab"
+        },
+        {
+          "file": "b10-root-cause.xlsx",
+          "title": "Root-Cause & Remediation Lab"
+        }
+      ]
+    },
+    {
+      "id": "lead-07",
+      "projectStage": "LEAD IT · Executive Governance",
+      "title": "Module 7 — Executive Communication and Governance",
+      "narrationTitle": "First-Person Leadership Narration",
+      "narration": "Executives do not need me to read the workpapers to them. They need to know whether the controls program is under control, where the important risks are and what decisions they need to make.\n\nI reduce the detail into a small number of management measures: scope confirmation, control coverage, testing progress, overdue evidence, significant deficiencies, remediation status and decisions required.\n\nFor every major issue I answer the same questions. What happened? Why does it matter? What are we doing about it? Who owns the action? When will it be resolved? What decision or support do I need?\n\nI also change my language for the audience. With an analyst I can discuss detailed testing steps. With a control owner I focus on the business risk and the action required. With the CFO or CIO I focus on exposure, impact, accountability, timing and decisions.\n\nGood executive communication is not removing important information. It is organizing the important information so management can act.",
+      "sourceDocuments": [
+        "Leadership Scenario Package",
+        "Executive Controls Dashboard and Steering Pack",
+        "Relevant Foundation Course Artifacts"
+      ],
+      "blankWorkbook": "TIB_Controls_Lead_Manager_AddOn_Templates.xlsx",
+      "completedWorkbook": "Executive Controls Dashboard and Steering Pack",
+      "reviewQuestions": [
+        "Can an executive understand the program status in two minutes?",
+        "What are the top risks?",
+        "What decisions are required?",
+        "Is each issue connected to an owner and date?",
+        "Have I removed detail without hiding material facts?"
+      ],
+      "nextActivity": "lead-08",
+      "connect": {
+        "nowKnow": "I can communicate program health and decisions to executives.",
+        "stillNeed": "I now need to integrate all leadership skills under realistic time pressure.",
+        "buildNext": "Enter the First 30 Days Capstone."
+      },
+      "leadershipAddon": true,
+      "scenario": "You have about 100 pages of detailed project information. The CFO gives you ten minutes to explain the state of the controls program and the decisions needed.",
+      "purpose": "Convert detailed controls information into concise decision-focused communication for sponsors, CIO/CFO, steering committees and audit leadership.",
+      "artifact": "Executive Controls Dashboard and Steering Pack",
+      "templateSheet": "07_Executive_Dashboard",
+      "observePrompts": [
+        "What decision is being made?",
+        "Who should perform the work?",
+        "What must the Lead personally review?",
+        "What evidence supports the status?",
+        "What would cause escalation?"
+      ],
+      "exercise": "Using only the scenario facts and provided source information, complete the Executive Controls Dashboard and Steering Pack. Do not invent missing facts. Mark unresolved information clearly and identify the person or evidence needed to resolve it.",
+      "enhancementMaterials": [
+        {
+          "file": "b08-people-skills.xlsx",
+          "title": "Stakeholder & People Skills Lab"
+        },
+        {
+          "file": "b11-dashboard.xlsx",
+          "title": "KPI/KRI Executive Dashboard Lab"
+        }
+      ]
+    },
+    {
+      "id": "lead-08",
+      "projectStage": "LEAD IT · 30-Day Capstone",
+      "title": "Module 8 — First 30 Days as Controls Lead or Manager — Capstone",
+      "narrationTitle": "First-Person Leadership Narration",
+      "narration": "This capstone is different from the foundation course. I am no longer being tested on whether I can personally complete every workbook. I am being tested on whether I can take accountability for the program.\n\nDuring Week One I take control. I meet the sponsor and team, assess the fourteen artifacts, review prior findings, establish governance, build the RACI and issue assignments. By Friday I must give management a reliable status.\n\nDuring Week Two I direct and challenge. I review analyst work, question SAP specialists, resolve evidence problems, manage auditor requests and adjust resources when work falls behind.\n\nDuring Week Three I review and decide. I assess testing results, reject weak workpapers, evaluate deficiencies, meet control owners, agree remediation and escalate important risks.\n\nDuring Week Four I govern and lead. I finalize the executive dashboard, run the remediation and steering meetings, present the thirty-day assessment and propose the sixty- and ninety-day roadmap.\n\nThe standard is simple. Can I explain what is happening, prove the status, assign the right people, detect weak work, make defensible decisions and take accountability for the outcome? That is the transition from building the controls project to leading it.",
+      "sourceDocuments": [
+        "Leadership Scenario Package",
+        "30-Day Assessment and 60/90-Day Leadership Roadmap",
+        "Relevant Foundation Course Artifacts"
+      ],
+      "blankWorkbook": "TIB_Controls_Lead_Manager_AddOn_Templates.xlsx",
+      "completedWorkbook": "30-Day Assessment and 60/90-Day Leadership Roadmap",
+      "reviewQuestions": [
+        "Did I establish control of the program in Week One?",
+        "Did I delegate rather than absorb the team's work?",
+        "Did I detect weak work and technical gaps?",
+        "Did I manage audit and remediation effectively?",
+        "Can I defend my 30/60/90-day plan to the sponsor?"
+      ],
+      "nextActivity": null,
+      "connect": {
+        "nowKnow": "I have practiced taking accountability for an inherited controls program.",
+        "stillNeed": "I must continue applying the same leadership disciplines on real projects.",
+        "buildNext": "Own the controls program: direct, challenge, review, decide and govern."
+      },
+      "leadershipAddon": true,
+      "scenario": "You inherit four analysts, a Security/GRC specialist, offshore support, 14 foundation artifacts, an S/4 program, 27 overdue evidence requests, six deficiencies and two unhappy process owners. External Audit is active.",
+      "purpose": "Integrate the entire add-on in a realistic inherited-program simulation requiring leadership, delegation, review, technical challenge, audit management, remediation and executive reporting.",
+      "artifact": "30-Day Assessment and 60/90-Day Leadership Roadmap",
+      "templateSheet": "08_30_60_90_Roadmap",
+      "observePrompts": [
+        "What decision is being made?",
+        "Who should perform the work?",
+        "What must the Lead personally review?",
+        "What evidence supports the status?",
+        "What would cause escalation?"
+      ],
+      "exercise": "Using only the scenario facts and provided source information, complete the 30-Day Assessment and 60/90-Day Leadership Roadmap. Do not invent missing facts. Mark unresolved information clearly and identify the person or evidence needed to resolve it.",
+      "enhancementMaterials": [
+        {
+          "file": "b13-takeover.xlsx",
+          "title": "First-30-Day Takeover Pack"
+        },
+        {
+          "file": "b14-own-it.xlsx",
+          "title": "OWN IT Employment-Readiness Gate"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "course": "pm_to_controls_lead",
+  "provider_strategy": "approved narration -> generated production audio -> private academy-materials storage -> signed playback URL",
+  "browser_tts_fallback": true,
+  "activities": {
+    "environment": {
+      "audio_title": "Environment \u2014 Controls Lead Narration",
+      "storage_path": null,
+      "status": "awaiting-production-audio"
+    },
+    "information-flows": {
+      "audio_title": "Information Flows \u2014 Controls Lead Narration",
+      "storage_path": null,
+      "status": "awaiting-approved-narration"
+    },
+    "business-processes": {
+      "audio_title": "Business Processes \u2014 Controls Lead Narration",
+      "storage_path": null,
+      "status": "awaiting-approved-narration"
+    },
+    "risks": {
+      "audio_title": "Risks \u2014 Controls Lead Narration",
+      "storage_path": null,
+      "status": "awaiting-approved-narration"
+    },
+    "controls": {
+      "audio_title": "Controls \u2014 Controls Lead Narration",
+      "storage_path": null,
+      "status": "awaiting-approved-narration"
+    },
+    "owners": {
+      "audio_title": "Owners \u2014 Controls Lead Narration",
+      "storage_path": null,
+      "status": "awaiting-approved-narration"
+    },
+    "evidence": {
+      "audio_title": "Evidence \u2014 Controls Lead Narration",
+      "storage_path": null,
+      "status": "awaiting-approved-narration"
+    },
+    "testing": {
+      "audio_title": "Testing \u2014 Controls Lead Narration",
+      "storage_path": null,
+      "status": "awaiting-approved-narration"
+    },
+    "results": {
+      "audio_title": "Results \u2014 Controls Lead Narration",
+      "storage_path": null,
+      "status": "awaiting-approved-narration"
+    },
+    "lead-01": {
+      "title": "Module 1 \u2014 Taking Command of the Controls Project",
+      "storage_path": null,
+      "status": "approved-script-awaiting-production-audio"
+    },
+    "lead-02": {
+      "title": "Module 2 \u2014 Building and Managing the Controls Team",
+      "storage_path": null,
+      "status": "approved-script-awaiting-production-audio"
+    },
+    "lead-03": {
+      "title": "Module 3 \u2014 Reviewing and Approving Team Work",
+      "storage_path": null,
+      "status": "approved-script-awaiting-production-audio"
+    },
+    "lead-04": {
+      "title": "Module 4 \u2014 SAP Technical Literacy for Controls Leaders",
+      "storage_path": null,
+      "status": "approved-script-awaiting-production-audio"
+    },
+    "lead-05": {
+      "title": "Module 5 \u2014 Managing Internal and External Audit",
+      "storage_path": null,
+      "status": "approved-script-awaiting-production-audio"
+    },
+    "lead-06": {
+      "title": "Module 6 \u2014 Deficiencies, Remediation and Risk Decisions",
+      "storage_path": null,
+      "status": "approved-script-awaiting-production-audio"
+    },
+    "lead-07": {
+      "title": "Module 7 \u2014 Executive Communication and Governance",
+      "storage_path": null,
+      "status": "approved-script-awaiting-production-audio"
+    },
+    "lead-08": {
+      "title": "Module 8 \u2014 First 30 Days as Controls Lead or Manager \u2014 Capstone",
+      "storage_path": null,
+      "status": "approved-script-awaiting-production-audio"
+    }
+  }
+}

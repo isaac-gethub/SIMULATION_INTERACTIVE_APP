@@ -1,0 +1,111 @@
+{
+  "release": "Batch 16 App Integration",
+  "activity_count": 17,
+  "policy": "No new learner-facing activities. Enhancements embedded in existing 9 BUILD IT + 8 LEAD IT activities.",
+  "embedded": {
+    "controls": [
+      [
+        "b02-control-class.xlsx",
+        "Control Classification Lab"
+      ],
+      [
+        "b03-de-oe.xlsx",
+        "Design vs Operating Effectiveness Lab"
+      ],
+      [
+        "b05-automation.xlsx",
+        "Control Automation / CCM Lab"
+      ]
+    ],
+    "evidence": [
+      [
+        "b04-ipe.xlsx",
+        "IPE / Report Reliability Lab"
+      ]
+    ],
+    "risks": [
+      [
+        "b09-prioritization.xlsx",
+        "Materiality & Prioritization Lab"
+      ]
+    ],
+    "results": [
+      [
+        "b10-root-cause.xlsx",
+        "Root-Cause & Remediation Lab"
+      ]
+    ],
+    "lead-03": [
+      [
+        "b03-de-oe.xlsx",
+        "Design vs Operating Effectiveness Lab"
+      ],
+      [
+        "b04-ipe.xlsx",
+        "IPE Reliability Challenge"
+      ]
+    ],
+    "lead-04": [
+      [
+        "b01-tech-playbook.docx",
+        "SAP Technical Challenge Playbook"
+      ],
+      [
+        "b01-tech-challenge.xlsx",
+        "Technical Challenge Cards"
+      ],
+      [
+        "b05-automation.xlsx",
+        "Automation / Continuous Monitoring Lab"
+      ],
+      [
+        "b06-modern-sap.xlsx",
+        "Modern SAP Landscape Lab"
+      ],
+      [
+        "b07-frameworks.xlsx",
+        "Framework Quick Reference"
+      ]
+    ],
+    "lead-05": [
+      [
+        "b12-audit-tech.xlsx",
+        "Audit & Technical Challenge Simulation"
+      ]
+    ],
+    "lead-06": [
+      [
+        "b09-prioritization.xlsx",
+        "Materiality & Prioritization Lab"
+      ],
+      [
+        "b10-root-cause.xlsx",
+        "Root-Cause & Remediation Lab"
+      ]
+    ],
+    "lead-07": [
+      [
+        "b08-people-skills.xlsx",
+        "Stakeholder & People Skills Lab"
+      ],
+      [
+        "b11-dashboard.xlsx",
+        "KPI/KRI Executive Dashboard Lab"
+      ]
+    ],
+    "lead-08": [
+      [
+        "b13-takeover.xlsx",
+        "First-30-Day Takeover Pack"
+      ],
+      [
+        "b14-own-it.xlsx",
+        "OWN IT Employment-Readiness Gate"
+      ]
+    ]
+  },
+  "instructor_only": [
+    "b15-instructor-qa.xlsx",
+    "b15-instructor-guide.docx"
+  ]
+}

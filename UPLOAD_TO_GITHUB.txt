@@ -1,0 +1,19 @@
+TIB ILA — FLAT GITHUB DEPLOYMENT
+
+THIS PACKAGE CONTAINS NO SUBFOLDERS.
+
+DEPLOYMENT:
+1. Extract this ZIP on your computer.
+2. Open the extracted folder.
+3. Press Ctrl+A to select EVERY file.
+4. In GitHub, open the ROOT of Academy_Leads_Interactive_Learning.
+5. Choose Add file > Upload files.
+6. Drag all selected files into the upload area.
+7. Commit changes.
+8. Allow Vercel to redeploy.
+
+IMPORTANT:
+- Do NOT upload the ZIP itself.
+- Do NOT create a lead-it-materials folder.
+- All former lead-it-materials files have been flattened and the application references updated.
+- index.html must be at the repository root.

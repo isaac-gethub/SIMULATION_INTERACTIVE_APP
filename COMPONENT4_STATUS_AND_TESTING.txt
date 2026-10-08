@@ -1,0 +1,7 @@
+COMPONENT 4 — SOURCE-INTEGRATED REVIEW BUILD
+
+Existing Academy baseline retained. Added shared-integration.html and workpaper-library.html, plus all 14 blank and 14 filled Excel workpapers. Removed instructor answer key and instructor-only materials from this review package.
+
+TEST: Open index.html; click Junior–Lead Integration Review. Complete a Junior submission; switch to Lead; return; correct and resubmit; approve against gate checklist; inspect revision history. Open Workpaper Library and download blank and example files.
+
+LIMITATIONS: The integrated review application stores records in browser localStorage and exchanges JSON manually. It DOES NOT implement multi-account Supabase synchronization, server-enforced permissions, or Excel cell-level validation. Filled examples are currently directly accessible and must be access-gated or removed from public production hosting. Do not deploy this review ZIP as an unrestricted production release. SAP connectivity remains unverified.

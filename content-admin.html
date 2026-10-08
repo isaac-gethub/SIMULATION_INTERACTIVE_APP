@@ -1,0 +1,47 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TIB ILA Content Admin</title>
+<style>
+:root{--n:#122a4a;--m:#7a263a;--b:#f4f7fa;--l:#d9e2ea;--t:#172230;--mut:#64748b}
+*{box-sizing:border-box}body{margin:0;font-family:Segoe UI,Arial;background:var(--b);color:var(--t)}
+header{background:var(--n);color:#fff;padding:17px 22px;display:flex;justify-content:space-between;align-items:center}header b{font-size:18px}header span{font-size:12px;opacity:.75}
+main{max-width:1200px;margin:auto;padding:22px}.grid{display:grid;grid-template-columns:280px 1fr;gap:16px}
+.card{background:#fff;border:1px solid var(--l);border-radius:13px;padding:16px}.list button{display:block;width:100%;text-align:left;border:0;background:#fff;padding:11px;border-radius:8px;margin:3px 0;cursor:pointer}.list button.active{background:#eaf2fb;color:var(--n);font-weight:800}
+h2{margin-top:0;color:var(--n)}label{display:block;font-size:12px;font-weight:800;color:#475569;margin:13px 0 6px}
+input,textarea,select{width:100%;padding:10px;border:1px solid #cbd5e1;border-radius:8px;font:inherit}textarea{min-height:110px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}.asset{border:1px dashed #aab8c5;border-radius:9px;padding:11px;margin:6px 0;background:#fafcfd}
+.actions{display:flex;gap:8px;margin-top:16px}.btn{border:0;border-radius:8px;padding:10px 14px;font-weight:800;cursor:pointer}.primary{background:var(--m);color:#fff}.secondary{background:#fff;border:1px solid var(--l);color:var(--n)}
+.notice{background:#fff8e7;border-left:4px solid #d69e2e;padding:12px;margin-bottom:16px;font-size:13px}
+.badge{display:inline-block;padding:4px 8px;border-radius:20px;background:#eef6f6;color:#155e63;font-size:11px;font-weight:800}
+@media(max-width:800px){.grid,.two{grid-template-columns:1fr}}
+</style></head><body>
+<header><div><b>TIB ACADEMY · CONTENT ADMIN</b><br><span>Interactive Learning Engine</span></div><span>Batch 7 Prototype</span></header>
+<main>
+<div class="notice"><b>Architecture prototype:</b> changes save in this browser only. Supabase persistence and secure asset upload are connected in the backend-integration batch.</div>
+<div class="grid">
+<section class="card"><h2>Course Activities</h2><div class="list" id="activities"></div></section>
+<section class="card">
+<span class="badge" id="stage">Environment</span><h2 id="heading">Landscape and System Inventory</h2>
+<label>Activity Title</label><input id="title">
+<label>Narration Title</label><input id="narrTitle">
+<label>First-Person Narration</label><textarea id="narration"></textarea>
+<div class="two">
+<div><label>Completed Workbook</label><input id="completed"><label>Blank Trainee Workbook</label><input id="blank"></div>
+<div><label>Next Activity</label><select id="next"></select><label>Audio File / URL</label><input id="audio" placeholder="ElevenLabs-generated audio file"></div>
+</div>
+<label>Client / Source Documents</label><div class="asset" id="docs">No source documents configured.</div>
+<label>Exercise Instructions</label><textarea id="exercise" placeholder="Tell the trainee exactly what to build from the supplied client information."></textarea>
+<label>Comparison / Review Questions</label><textarea id="questions"></textarea>
+<label>CONNECT — What I Now Know</label><textarea id="know"></textarea>
+<label>CONNECT — What I Still Need to Know</label><textarea id="need"></textarea>
+<label>CONNECT — What I Build Next</label><input id="buildNext">
+<div class="actions"><button class="btn primary" onclick="save()">Save Activity</button><button class="btn secondary" onclick="exportData()">Export Course JSON</button></div>
+</section></div></main>
+<script>
+let data=null,current=0;
+async function init(){data=await fetch('course-content.json').then(r=>r.json());const saved=localStorage.getItem('tib_ila_content_admin');if(saved)try{data=JSON.parse(saved)}catch(e){};renderList();load(0)}
+function renderList(){activities.innerHTML='';data.activities.forEach((a,i)=>{let b=document.createElement('button');b.textContent=(i+1)+'. '+a.projectStage+' — '+a.title;b.onclick=()=>load(i);if(i===current)b.className='active';activities.appendChild(b)})}
+function load(i){current=i;renderList();let a=data.activities[i];stage.textContent=a.projectStage;heading.textContent=a.title;title.value=a.title||'';narrTitle.value=a.narrationTitle||'';narration.value=a.narration||'';completed.value=a.completedWorkbook||'';blank.value=a.blankWorkbook||'';audio.value=a.audio||'';exercise.value=a.exercise||'';questions.value=(a.reviewQuestions||[]).join('\n');know.value=(a.connect||{}).nowKnow||'';need.value=(a.connect||{}).stillNeed||'';buildNext.value=(a.connect||{}).buildNext||'';docs.innerHTML=(a.sourceDocuments||[]).map(x=>'▤ '+x).join('<br>')||'No source documents configured.';next.innerHTML='<option value="">End of course</option>'+data.activities.map(x=>'<option value="'+x.id+'">'+x.projectStage+'</option>').join('');next.value=a.nextActivity||''}
+function save(){let a=data.activities[current];a.title=title.value;a.narrationTitle=narrTitle.value;a.narration=narration.value;a.completedWorkbook=completed.value;a.blankWorkbook=blank.value;a.audio=audio.value;a.exercise=exercise.value;a.reviewQuestions=questions.value.split('\n').filter(Boolean);a.nextActivity=next.value||null;a.connect={nowKnow:know.value,stillNeed:need.value,buildNext:buildNext.value};localStorage.setItem('tib_ila_content_admin',JSON.stringify(data));heading.textContent=a.title;renderList();alert('Activity saved in this browser prototype.')}
+function exportData(){let blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'}),u=URL.createObjectURL(blob),a=document.createElement('a');a.href=u;a.download='course-content.json';a.click();URL.revokeObjectURL(u)}
+init();
+</script></body></html>

@@ -1,0 +1,86 @@
+{
+  "course": "pm_to_controls_lead",
+  "mapping_policy": "Only confirmed existing TIB materials are mapped. No document is claimed to contain a specific workbook unless its title supports that use. Activity-specific workbook binding remains explicit and editable.",
+  "global_materials": [
+    "TIB LEARN TO LEAD Course Guide",
+    "README LEARN TO LEAD Course",
+    "Controls Lead Playbook 15 Person Team",
+    "Corvane Story Controls Lead Narrative",
+    "Corvane Weekly Activity Plan",
+    "TIB SAP Controls Foundation Deployment Guide",
+    "TIB SAP Controls Foundation Manual Part1",
+    "TIB SAP Controls Foundation Manual Part2",
+    "TIB SAP Controls Foundation Manual Part3A",
+    "TIB SAP Controls Foundation Manual Part3B",
+    "TIB SAP Controls Foundation Manual Part4",
+    "TIB Workbook Primer Part1 Sessions 1-5",
+    "TIB Workbook Primer Part2 Sessions 6-10",
+    "TIB Workbook Primer Part3 Sessions 11-12 Assessment",
+    "Corvane Energy SAP Controls Project"
+  ],
+  "activity_mapping": {
+    "environment": {
+      "preferred": [
+        "TIB SAP Controls Foundation Manual Part1",
+        "TIB Workbook Primer Part1 Sessions 1-5",
+        "Corvane Energy SAP Controls Project"
+      ]
+    },
+    "information-flows": {
+      "preferred": [
+        "TIB SAP Controls Foundation Manual Part1",
+        "TIB Workbook Primer Part1 Sessions 1-5",
+        "Corvane Energy SAP Controls Project"
+      ]
+    },
+    "business-processes": {
+      "preferred": [
+        "TIB SAP Controls Foundation Manual Part2",
+        "TIB Workbook Primer Part1 Sessions 1-5",
+        "Corvane Energy SAP Controls Project"
+      ]
+    },
+    "risks": {
+      "preferred": [
+        "TIB SAP Controls Foundation Manual Part2",
+        "TIB Workbook Primer Part2 Sessions 6-10",
+        "Corvane Energy SAP Controls Project"
+      ]
+    },
+    "controls": {
+      "preferred": [
+        "TIB SAP Controls Foundation Manual Part3A",
+        "TIB Workbook Primer Part2 Sessions 6-10",
+        "Corvane Energy SAP Controls Project"
+      ]
+    },
+    "owners": {
+      "preferred": [
+        "TIB SAP Controls Foundation Manual Part3A",
+        "TIB Workbook Primer Part2 Sessions 6-10",
+        "Corvane Energy SAP Controls Project"
+      ]
+    },
+    "evidence": {
+      "preferred": [
+        "TIB SAP Controls Foundation Manual Part3B",
+        "TIB Workbook Primer Part2 Sessions 6-10",
+        "Corvane Energy SAP Controls Project"
+      ]
+    },
+    "testing": {
+      "preferred": [
+        "TIB SAP Controls Foundation Manual Part4",
+        "TIB Workbook Primer Part3 Sessions 11-12 Assessment",
+        "TIB Assessment Pack Modules 4-8 Participant"
+      ]
+    },
+    "results": {
+      "preferred": [
+        "TIB SAP Controls Foundation Manual Part4",
+        "TIB Module 10 Capstone Participant Brief",
+        "TIB Assessment Pack Modules 4-8 Participant"
+      ]
+    }
+  }
+}
