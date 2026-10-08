@@ -61,7 +61,7 @@ textarea{width:100%;min-height:75px;border:1px solid #cbd5e1;border-radius:8px;p
 </style><script src="https://cdn.jsdelivr.net/npm/mammoth@1.8.0/mammoth.browser.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/docx-preview@0.3.6/dist/docx-preview.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>\n
+<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
 <style>
 .materialsGrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px;margin-top:16px}.fileCard{border:1px solid var(--line);background:#fff;border-radius:12px;padding:14px}.fileCard button{border:0;background:var(--navy);color:#fff;padding:8px 10px;border-radius:8px;font-weight:700;cursor:pointer}
 .xlsxView{min-width:0;padding:12px}.xlsxTabs{display:flex;gap:6px;overflow:auto;position:sticky;top:0;background:#eef2f6;padding:8px 0;z-index:2}.xlsxTabs button{white-space:nowrap;border:1px solid var(--line);background:#fff;padding:7px 9px;border-radius:7px;cursor:pointer}.xlsxTabs button.active{background:var(--navy);color:#fff}.xlsxTableWrap{overflow:auto;background:#fff;border:1px solid var(--line);border-radius:10px}.xlsxTableWrap table{border-collapse:collapse;min-width:100%;width:max-content;max-width:none}.xlsxTableWrap td,.xlsxTableWrap th{border:1px solid #d9e2ea;padding:7px;vertical-align:top;white-space:normal;max-width:420px}.docxView,.safeDocx,.docxPreviewHost{width:100%;min-height:100%;overflow:auto;padding:18px}.docxPaper,.safeDocxPaper{max-width:1200px;margin:0 auto;background:#fff;padding:28px;overflow-x:auto}.docxPaper table,.safeDocxPaper table,.docxPreviewHost table{max-width:100%!important;width:100%!important;table-layout:auto!important}.docxPaper td,.docxPaper th,.safeDocxPaper td,.safeDocxPaper th{overflow-wrap:anywhere;word-break:normal}.docx-wrapper{padding:18px!important;background:#eef2f6!important}.docx-wrapper>section.docx{max-width:1200px!important;width:calc(100vw - 48px)!important;min-height:auto!important;margin:0 auto 18px!important;box-shadow:none!important}
@@ -70,7 +70,7 @@ textarea{width:100%;min-height:75px;border:1px solid #cbd5e1;border-radius:8px;p
 </style>
 </head>
 <body>
-<header><div><div class="brand">TIB ACADEMY</div><small>INTERACTIVE LEARNING</small></div><div class="spacer"></div><span class="userChip" id="userChip">Not signed in</span><button class="refBtn" onclick="openCourseOverview()">Course Overview</button><button class="refBtn" onclick="openJobMarketAlignment()">Job Market Fit</button><button class="refBtn" onclick="openCorvaneReference()">Corvane Project Reference</button><button class="refBtn" onclick="openCorvaneSAP()">Open Corvane SAP</button><button class="refBtn" onclick="openSampleDocumentLibrary()">Sample Documents</button><a class="adminLink" href="content-admin.html">Content Admin</a><a class="adminLink" href="#" onclick="sb.auth.signOut();location.reload();return false">Sign Out</a><a href="shared-integration.html" style="color:#fff;border:1px solid #ffffff77;padding:8px;border-radius:7px;text-decoration:none">Junior–Lead Integration Review</a></header>
+<header><div><div class="brand">TIB ACADEMY</div><small>INTERACTIVE LEARNING</small></div><div class="spacer"></div><span class="userChip" id="userChip">Not signed in</span><button class="refBtn" onclick="openCourseOverview()">Course Overview</button><button class="refBtn" onclick="openJobMarketAlignment()">Job Market Fit</button><button class="refBtn" onclick="openCorvaneReference()">Corvane Project Reference</button><button class="refBtn" onclick="openCorvaneSAP()">Open Corvane SAP</button><button class="refBtn" onclick="openSampleDocumentLibrary()">Sample Documents</button><a class="adminLink" href="content-admin.html">Content Admin</a><a class="adminLink" href="#" onclick="sb.auth.signOut();location.reload();return false">Sign Out</a></header>
 <div class="viewer" id="viewer">
  <div class="viewerHead"><button class="viewerBack" onclick="courseHome()">← Course Home</button><button class="viewerBack" id="libraryBackBtn" onclick="openSampleDocumentLibrary()" style="display:none">← Sample Library</button><b id="viewerTitle">Document Viewer</b><div class="spacer"></div>
  <div class="viewerActions"><button class="viewerBtn" onclick="downloadViewerOriginal()">Download Original</button><button class="viewerBtn" onclick="viewerFullscreen()">Full Screen</button><button class="viewerBtn" onclick="closeViewer()">Close</button></div></div>
@@ -82,7 +82,7 @@ textarea{width:100%;min-height:75px;border:1px solid #cbd5e1;border-radius:8px;p
 <label>Email</label><input type="email" id="loginEmail" autocomplete="email">
 <label>Password</label><input type="password" id="loginPassword" autocomplete="current-password">
 <button class="btn" id="signInBtn" type="button" onclick="signIn()">Sign In</button>
-<div class="authMsg" id="authMsg"></div><div style="margin-top:12px;font-size:11px;color:#64748b">Build: 2026-10-07-G6-DIRECT-HOME-9</div>
+<div class="authMsg" id="authMsg"></div><div style="margin-top:12px;font-size:11px;color:#64748b">Build: 2026-10-08-COURSE-INIT-FIX-1</div>
 </div></div><div class="layout">
 <aside class="side"><h4>PROJECT MAP</h4><div class="map"><button id="foundationNav" onclick="openFoundation()"><b>FOUNDATION · Controls Theory</b></button></div><div class="map" id="map"></div></aside>
 <main>
@@ -96,14 +96,14 @@ textarea{width:100%;min-height:75px;border:1px solid #cbd5e1;border-radius:8px;p
 <script>
 const SUPABASE_URL='https://blfgwysgekfqhcafofhe.supabase.co';
 const SUPABASE_PUBLISHABLE_KEY='sb_publishable_ThLetpd4hj49fjce-kXoFA_v4ghwIqV';
-const BUILD_VERSION='2026-10-07-G6-DIRECT-HOME-9';
+const BUILD_VERSION='2026-10-08-COURSE-INIT-FIX-1';
 const sb=window.supabase.createClient(SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY);
 function el(id){return document.getElementById(id)}
 const activityTitle=el('activityTitle'), projectStage=el('projectStage'), crumb=el('crumb'), current=el('current'), bar=el('bar'), progressText=el('progressText'), map=el('map'), stages=el('stages'), viewer=el('viewer'), viewerBody=el('viewerBody'), viewerTitle=el('viewerTitle'), libraryBackBtn=el('libraryBackBtn');
 function setAuthMessage(msg){const x=el('authMsg'); if(x)x.textContent=msg||'';}
 const ENROLLMENT_COURSE='TIB-PM-CONTROLS-LEAD';
 const APP_COURSE_ID='pm_to_controls_lead';
-const BUILD_ID='2026-10-07-G6-DIRECT-HOME-9'; console.info('TIB ILA Build:',BUILD_ID);
+const BUILD_ID='2026-10-08-COURSE-INIT-FIX-1'; console.info('TIB ILA Build:',BUILD_ID);
 const MATERIALS_BUCKET='academy-materials';
 const SUBMISSIONS_BUCKET='academy-submissions';
 let currentUser=null,data,ai=0,si=0;const stageNames=['SEE','LISTEN','OBSERVE','BUILD','COMPARE','CONNECT'];
@@ -392,7 +392,6 @@ async function renderLocalFile(path,title){
  }catch(e){viewerBody.innerHTML=`<div class="viewerError"><h2>Sample document could not be opened</h2><p>${esc(e.message||'Unable to open sample.')}</p><p>Select <b>Download Original</b> or return to the course.</p></div>`;}
 }
 
-async 
 function openCorvaneSAP(scenario){
  const sid=scenario||'CORV-SIM-01';
  const url='tibsap://corvane?scenario='+encodeURIComponent(sid);
@@ -540,4 +539,4 @@ async function uploadSubmission(){
 }
 
 init();
-</script><div style="position:fixed;bottom:12px;right:12px;background:#142d50;padding:11px;border-radius:8px;z-index:10000"><a href="secure-training.html" style="color:white">Corvane Junior–Lead Training</a></div></body></html>
+</script></body></html>
