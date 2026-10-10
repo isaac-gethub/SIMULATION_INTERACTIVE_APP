@@ -1,4 +1,9 @@
 {
-  "cleanUrls": true,
-  "trailingSlash": false
+  "redirects": [
+    { "source": "/foundation-b:n(\\d+)(\\.html)?", "destination": "https://tib-corvane-academy-app.vercel.app/foundation/b:n", "permanent": false },
+    { "source": "/foundation(\\.html)?", "destination": "https://tib-corvane-academy-app.vercel.app/foundation/", "permanent": false },
+    { "source": "/(secure-training|shared-integration)(\\.html)?", "destination": "https://tib-corvane-academy-app.vercel.app/?course=pm_to_controls_lead&view=team", "permanent": false },
+    { "source": "/(workpaper-library|course-home|course-overview)(\\.html)?", "destination": "https://tib-corvane-academy-app.vercel.app/?course=pm_to_controls_lead&view=materials", "permanent": false },
+    { "source": "/:path*", "destination": "https://tib-corvane-academy-app.vercel.app/?course=pm_to_controls_lead", "permanent": false }
+  ]
 }
